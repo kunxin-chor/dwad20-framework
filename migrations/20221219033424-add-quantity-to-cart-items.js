@@ -16,7 +16,7 @@ exports.setup = function(options, seedLink) {
 
 exports.up = function(db) {
   return db.addColumn("cart_items", "quantity", {
-    'type':'mediumint',
+    'type':'int',
     'unsigned': true,
     'defaultValue': 0,
     'notNull': true
